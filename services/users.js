@@ -10,7 +10,7 @@ async function getAllUsers() {
 
 async function getUserById(id) {
   try {
-    return UserModel.findById({ _id: id });
+    return UserModel.findById(id);
   } catch (err) {
     console.log(err);
   }

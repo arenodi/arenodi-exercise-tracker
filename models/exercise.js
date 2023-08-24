@@ -1,6 +1,7 @@
 let mongoose = require("mongoose");
 
 let exerciseSchema = new mongoose.Schema({
+  userId: String,
   description: String,
   duration: Number,
   date: {
